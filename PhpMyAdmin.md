@@ -112,6 +112,6 @@ Step 12 : **EDIT** `httpd.conf` IN `/etc/httpd/conf/`
 
 Step 13 :` systemctl restart httpd`
 
->> open  [PHP my admin ](http://localhost/phpmyadmin){:target="_blank"}
+>> open  [PHP my admin ](http://localhost/phpmyadmin)
 
  ## [README](README.md)
