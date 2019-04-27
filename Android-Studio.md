@@ -39,4 +39,6 @@ export "ANDROID_HOME=~/Android/Sdk/" >> ~/.bashrc
 
 5- Android-Studio >> Configure >>  SDK manager >> SDK tools and install `Android Emulator` 
 
+
+ ## [README](README.md)
  
