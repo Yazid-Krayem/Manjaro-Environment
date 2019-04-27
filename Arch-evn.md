@@ -1,4 +1,4 @@
-# after install arch OS 
+# After install arch OS 
 
 ## install Discord 
 
