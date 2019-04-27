@@ -1,6 +1,6 @@
 # Manjaro-Environment
 
-## [Softwares+npm](Arch-env.md) 
+## [Softwares+npm](Arch-evn.md) 
 
 ## [Android-Studio](Android-Studio.md) 
 
