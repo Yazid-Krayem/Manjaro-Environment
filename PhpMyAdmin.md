@@ -1,14 +1,14 @@
 ## PHP My Admin 
 
-Step 1 : Update you system 
+Step 1: Update you system 
 
 		sudo pacman -Syu
 
-Step 2 : Install `Apache` :
+Step 2: Install `Apache` :
 
 		sudo pacman -S apache
 		
-Step 3 : **Edit** `httpd.conf` file 
+Step 3: **Edit** `httpd.conf` file 
 
 		sudo nano /etc/httpd/conf/httpd.conf
 
@@ -17,7 +17,7 @@ Step 3 : **Edit** `httpd.conf` file
 		#LoadModule unique_id_module modules/mod_unique_id.so
 
 
-Step4 : Enable `Apache` service to start at boot and restart Apache service using commands:
+Step 4: Enable `Apache` service to start at boot and restart Apache service using commands:
 
 
 		systemctl enable httpd
@@ -28,7 +28,7 @@ Step4 : Enable `Apache` service to start at boot and restart Apache service usin
 	
 		systemctl status httpd
 
-Step 5 : Install MariaDB
+Step 5: Install MariaDB
 
 		sudo pacman -S mysql
 		
@@ -43,17 +43,17 @@ Then issue the following command to enable and start MariaDB service.
 		systemctl enable mysqld
 		systemctl start mysqld
 		
-Step 6 : Setup MySQL/MariaDB root user password 
+Step 6: Setup MySQL/MariaDB root user password 
 
 		mysql_secure_installation
 		
-Step 7 : Install PHP
+Step 7: Install PHP
 
 		sudo pacman -S php php-apache
 		
  
  
- Step 8 : **EDIT** `httpd.conf` IN `/etc/httpd/conf/httpd.conf` Folder:
+ Step 8: **EDIT** `httpd.conf` IN `/etc/httpd/conf/httpd.conf` Folder:
  	
  		sudo nano  /etc/httpd/conf/httpd.conf
  
@@ -72,11 +72,11 @@ Step 7 : Install PHP
 		 systemctl restart httpd
 
 
-Step 9 : Install phpMyAdmin
+Step 9: Install phpMyAdmin
 
 		sudo pacman -S phpmyadmin 
 
-Step 10 : **EDIT** `php.ini` IN `/etc/php/php.ini`
+Step 10: **EDIT** `php.ini` IN `/etc/php/php.ini`
 
 		sudo nano /etc/php/php.ini
 
@@ -87,7 +87,7 @@ Step 10 : **EDIT** `php.ini` IN `/etc/php/php.ini`
 		extension=bz2
 		extension=mysqli
 		
-Step 11 : Create configuration file for phpMyAdmin:
+Step 11: Create configuration file for phpMyAdmin:
 
 	sudo nano /etc/httpd/conf/extra/phpmyadmin.conf
 	
@@ -102,7 +102,7 @@ Step 11 : Create configuration file for phpMyAdmin:
  			</Directory>
 
 
-Step 12 : **EDIT** `httpd.conf` IN `/etc/httpd/conf/`
+Step 12: **EDIT** `httpd.conf` IN `/etc/httpd/conf/`
 
 		sudo nano /etc/httpd/conf/httpd.conf
 
@@ -110,7 +110,7 @@ Step 12 : **EDIT** `httpd.conf` IN `/etc/httpd/conf/`
 
 		Include conf/extra/phpmyadmin.conf
 
-Step 13 :` systemctl restart httpd`
+Step 13:` systemctl restart httpd`
 
 >> open  [PHP my admin ](http://localhost/phpmyadmin)
 
